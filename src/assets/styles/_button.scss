@@ -1,0 +1,117 @@
+//burger
+.burger {
+   position: relative;
+
+   width: 5rem;
+   height: 3rem;
+   display: none;
+   align-items: center;
+
+   background: inherit;
+   border: none;
+
+   @media screen and (max-width: $sm) {
+      width: 3rem;
+      height: 1.8rem;
+   }
+
+   span {
+      position: absolute;
+      left: 0;
+
+      width: 37px;
+      height: 5px;
+      display: block;
+
+      background: $decor3;
+
+      @media screen and (max-width: $sm) {
+         width: 2.2rem;
+         height: 4px;
+      }
+   }
+
+   &::after,
+   &::before {
+      position: absolute;
+      left: 0;
+
+      display: block;
+      content: "";
+      height: 5px;
+      width: 5rem;
+
+      background: $decor3;
+
+      @media screen and (max-width: $sm) {
+         width: 3rem;
+         height: 4px;
+      }
+   }
+
+   &::after {
+      top: 0;
+   }
+
+   &::before {
+      bottom: 0;
+   }
+
+   &:hover span,
+   &:focus span {
+      width: 5rem;
+
+      @media screen and (max-width: $sm) {
+         width: 3rem;
+         height: 4px;
+      }
+   }
+
+   @media screen and (max-width: 1000px) {
+      display: flex;
+   }
+}
+
+//burger-close
+.burger-close {
+   position: absolute;
+   top: 24px;
+   right: 25px;
+
+   width: 3rem;
+   height: 3rem;
+
+   background: inherit;
+   border: none;
+
+   @media screen and (max-width: $mob) {
+      top: 20px;
+      right: 20px;
+   }
+
+   &::after,
+   &::before {
+      position: absolute;
+      left: 0;
+
+      display: block;
+      content: "";
+      width: 30px;
+      height: 4px;
+
+      background: #55a630;
+
+      @media screen and (max-width: $mob) {
+         width: 20px;
+         height: 3px;
+      }
+   }
+
+   &::after {
+      transform: rotate(-45deg);
+   }
+
+   &::before {
+      transform: rotate(45deg);
+   }
+}

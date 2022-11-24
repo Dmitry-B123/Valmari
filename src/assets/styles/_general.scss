@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+   outline: none;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-family: $fontfirst;
+   font-weight: 500;
+   color: $color1;
+   font-size: 1.5rem;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+li {
+   list-style: none;
+}
+
+ul,
+nav {
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+}
+
+nav {
+   margin: 0;
+}
+
+.container {
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+
+   @media screen and (max-width: $xl) {
+      padding: 0 3%;
+   } 
+}
