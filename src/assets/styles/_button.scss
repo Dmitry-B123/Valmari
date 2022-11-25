@@ -115,3 +115,58 @@
       transform: rotate(45deg);
    }
 }
+
+//main-promo__btns and btn
+.btn {
+   width: 28.5rem;
+   height: 6.6rem;
+
+   font-weight: 600;
+   font-size: 1.8rem;
+   line-height: 2.6rem;
+   text-align: center;
+   color: $color2;
+
+   background-color: $decor3;
+   border: none;
+
+   &:hover,
+   &:active,
+   &:focus {
+      background: lighten($decor3, 20%);
+   }
+
+   &-main-promo {
+      border: 1px solid $decor3;
+   }
+
+   &-transparent {
+      background-color: transparent;
+      color: $color3;
+
+      &:hover,
+      &:active,
+      &:focus {
+         background: lighten($decor1, 3%);
+      }
+   }
+
+   @media screen and (max-width: 1150px) {
+      width: 24.7rem;
+      height: 5.5rem;
+
+      font-size: 1.8rem;
+   }
+
+   @media screen and (max-width: $md) {
+      width: 22rem;
+      height: 4.5rem;
+
+      font-size: 1.5rem;
+   }
+
+   @media screen and (max-width: $sm) {
+      width: 18rem;
+      height: 4rem;
+   }
+}

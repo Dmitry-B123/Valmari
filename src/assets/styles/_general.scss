@@ -19,6 +19,12 @@ body {
 a {
    text-decoration: none;
    color: inherit;
+   cursor: pointer;
+}
+
+button {
+   border: none;
+   cursor: pointer;
 }
 
 li {
@@ -52,5 +58,5 @@ nav {
 
    @media screen and (max-width: $xl) {
       padding: 0 3%;
-   } 
+   }
 }
