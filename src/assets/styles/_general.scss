@@ -16,6 +16,20 @@ body {
    font-size: 1.5rem;
 }
 
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+   width: 15px; /* ширина для вертикального скролла */
+   height: 8px; /* высота для горизонтального скролла */
+   background-color: #ffffff;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+   background-color: $decor3;
+   border-radius: 20px;
+   box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
 a {
    text-decoration: none;
    color: inherit;
@@ -80,4 +94,8 @@ nav {
    font-size: 3.5rem;
    line-height: 2.8rem;
    text-align: center;
+
+   @media screen and (max-width: $sm) {
+      margin-top: 8rem;
+   }
 }

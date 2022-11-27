@@ -23,6 +23,14 @@
       @media screen and (max-width: 1260px) {
          max-width: 700px;
       }
+
+      @media screen and (max-width: $md) {
+         max-width: 600px;
+      }
+
+      @media screen and (max-width: $sm) {
+         background: none;
+      }
    }
 }
 
@@ -38,7 +46,7 @@
    .slick-track {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       gap: 4rem;
 
       @media screen and (max-width: $md) {
@@ -47,6 +55,10 @@
 
       @media screen and (max-width: 400px) {
          gap: 0.5rem;
+      }
+
+      @media screen and (max-width: $mob) {
+         gap: 0rem;
       }
    }
 }
