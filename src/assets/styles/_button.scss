@@ -120,6 +120,9 @@
 .btn {
    width: 28.5rem;
    height: 6.6rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
    font-weight: 600;
    font-size: 1.8rem;
@@ -168,5 +171,42 @@
    @media screen and (max-width: $sm) {
       width: 18rem;
       height: 4rem;
+   }
+}
+
+.btn-small {
+   width: 16.6rem;
+   height: 4rem;
+
+   border-radius: 9px;
+}
+
+.btn.birch-btn {
+   background-color: $decor4;
+
+   &:hover,
+   &:active,
+   &:focus {
+      background: lighten($decor4, 5%);
+   }
+}
+
+.btn.green-btn {
+   background-color: $decor3;
+
+   &:hover,
+   &:active,
+   &:focus {
+      background: lighten($decor3, 5%);
+   }
+}
+
+.btn.violet-btn {
+   background-color: $decor2;
+
+   &:hover,
+   &:active,
+   &:focus {
+      background: lighten($decor2, 5%);
    }
 }
