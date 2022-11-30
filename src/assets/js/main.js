@@ -51,5 +51,26 @@ let x = document.querySelectorAll('ul.slick-dots li button');
 
 x.forEach(el => {
    el.textContent = "";
-   console.log(el);
+});
+
+// slider masterclasses
+$(function () {
+   $('.masterclasses__slider').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      prevArrow: $('.slider-masterclasses-btn-left'),
+      nextArrow: $('.slider-masterclasses-btn-right'),
+      dots: true,
+      responsive: [
+         {
+            breakpoint: 560,
+            settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               row: 2,
+               arrows: false,
+            }
+         }
+      ]
+   });
 });

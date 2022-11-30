@@ -209,7 +209,8 @@
 }
 
 //slider arrows
-.slider-courses-btn-left {
+.slider-courses-btn-left,
+.slider-masterclasses-btn-left {
    position: absolute;
    top: 50%;
    left: 0;
@@ -224,7 +225,8 @@
    }
 }
 
-.slider-courses-btn-right {
+.slider-courses-btn-right,
+.slider-masterclasses-btn-right {
    position: absolute;
    top: 50%;
    right: 0;

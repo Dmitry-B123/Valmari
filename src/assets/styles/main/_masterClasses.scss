@@ -1,0 +1,177 @@
+.masterclasses {
+   .masterclasses__inner {
+      position: relative;
+   }
+}
+
+.masterclasses__inner-info {
+   margin-top: 3rem;
+
+   font-size: 2.5rem;
+   line-height: 2.6rem;
+   text-align: center;
+}
+
+//slider
+.masterclasses__slider {
+   margin-top: 7.7rem;
+
+   @media screen and (max-width: $md) {
+      margin-top: 3rem;
+   }
+
+   .slick-track {
+      display: flex;
+      justify-content: space-around;
+      gap: 5rem;
+
+      @media screen and (max-width: $md) {
+         gap: 2rem;
+      }
+
+      @media screen and (max-width: 400px) {
+         gap: 0.5rem;
+      }
+
+      @media screen and (max-width: $mob) {
+         gap: 0rem;
+      }
+   }
+
+   .masterclasses__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+
+      img {
+         width: 100%;
+      }
+
+      .masterclasses__info {
+         display: flex;
+
+         .masterclasses__description {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 5rem 0 3rem;
+            min-height: 27rem;
+
+            @media screen and (max-width: $md) {
+               padding: 1.5rem 2rem 0 3rem;
+            }
+         }
+
+         time {
+            margin-top: 1.5rem;
+
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            opacity: 0.8;
+         }
+
+         p {
+            margin-top: 1rem;
+
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+
+            @media screen and (max-width: 1170px) {
+               font-size: 1.5rem;
+               line-height: 1.8rem;
+            }
+         }
+
+         .masterclasses__teacher {
+            margin-top: 2rem;
+
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            opacity: 0.4;
+
+            @media screen and (max-width: 1170px) {
+               font-weight: 400;
+               font-size: 1.5rem;
+               line-height: 1.8rem;
+            }
+
+            @media screen and (max-width: $md) {
+               font-size: 1.2rem;
+               line-height: 1.5rem;
+            }
+         }
+
+         .masterclasses__block {
+            display: flex;
+            flex-direction: column;
+
+            .masterclasses__price {
+               padding: 5.2rem 2rem 5.2rem 3.2rem;
+               height: 50%;
+               width: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+               font-weight: 600;
+               font-size: 2rem;
+               line-height: 2.2rem;
+
+               background: #ecf9eb;
+
+               @media screen and (max-width: $lg) {
+                  padding: 2.2rem 2rem 2.2rem 1.2rem;
+
+                  font-size: 1.2rem;
+                  line-height: 1.8rem;
+               }
+
+               @media screen and (max-width: 559px) {
+                  padding: 5.2rem 2rem 5.2rem 3.2rem;
+               }
+
+               @media screen and (max-width: 450px) {
+                  padding: 2.2rem 2rem 2.2rem 1.2rem;
+               }
+            }
+
+            .masterclasses__link {
+               height: 50%;
+               width: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               padding: 5rem 6.4rem;
+
+               background-color: $decor3;
+
+               @media screen and (max-width: $lg) {
+                  padding: 2rem 2rem;
+               }
+
+               @media screen and (max-width: 559px) {
+                  padding: 5rem 6.4rem;
+               }
+
+               @media screen and (max-width: 450px) {
+                  padding: 2rem 2rem;
+               }
+
+               img {
+                  width: 2.5rem;
+               }
+            }
+         }
+      }
+   }
+}
+
+.slider-masterclasses-btn-left,
+.slider-masterclasses-btn-right {
+   top: 70%;
+
+   @media screen and (max-width: 700px) {
+      display: none;
+   }
+}
