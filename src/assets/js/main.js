@@ -74,3 +74,32 @@ $(function () {
       ]
    });
 });
+
+// slider offer
+$(function () {
+   $('.offer__slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $('.slider-offer-btn-left'),
+      nextArrow: $('.slider-offer-btn-right'),
+      dots: true,
+      responsive: [
+         {
+            breakpoint: 660,
+            settings: {
+               slidesToShow: 2,
+               slidesToScroll: 1,
+               arrows: false,
+            }
+         },
+         {
+            breakpoint: 400,
+            settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               arrows: false,
+            }
+         }
+      ]
+   });
+});

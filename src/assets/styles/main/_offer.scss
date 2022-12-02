@@ -1,0 +1,33 @@
+.offer__inner {
+   position: relative;
+}
+
+.offer__slider {
+   .slick-track {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      margin-top: 7.5rem;
+
+      @media screen and (max-width: $md) {
+         gap: 2rem;
+         margin-top: 5rem;
+      }
+
+      @media screen and (max-width: 400px) {
+         gap: 0.5rem;
+         margin-top: 4rem;
+      }
+
+      @media screen and (max-width: $mob) {
+         gap: 0rem;
+      }
+   }
+}
+
+.offer__item {
+   img {
+      width: 100%;
+   }
+}
