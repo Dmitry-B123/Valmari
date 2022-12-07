@@ -150,6 +150,12 @@
       display: none;
    }
 
+   .header__nav-item {
+      &-active {
+         color: $color3;
+      }
+   }
+
    .header__nav-link {
       font-size: 1.6rem;
       line-height: 2.6rem;

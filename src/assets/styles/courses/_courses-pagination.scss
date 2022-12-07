@@ -1,0 +1,23 @@
+.courses-pagination {
+   display: flex;
+   justify-content: center;
+   margin-top: 7.5rem;
+   gap: 1.6rem;
+
+   button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: none;
+      background: none;
+
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+      font-weight: 600;
+   }
+
+   .courses-pagination-active {
+      color: $color3;
+   }
+}

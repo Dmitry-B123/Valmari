@@ -1,0 +1,136 @@
+.courses-list__inner {
+   margin-top: 6rem;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 6rem;
+
+   @media screen and (max-width: $lg) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      justify-content: center;
+   }
+
+   @media screen and (max-width: 550px) {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .courses__item {
+      max-height: 63rem;
+      display: grid;
+      align-items: stretch;
+
+      position: relative;
+      z-index: 0;
+   }
+
+   .courses__item-video {
+      align-items: stretch;
+   }
+
+   a {
+      align-self: end;
+   }
+}
+
+.courses__item-b {
+   // display: flex;
+   // flex-direction: column;
+   display: grid;
+   margin-bottom: 4rem;
+
+   .courses__block-video {
+      position: relative;
+
+      max-height: 25rem;
+
+      &::before {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+
+         display: block;
+         content: "";
+         width: 100%;
+         height: 100%;
+
+         background: rgba(66, 66, 66, 0.5);
+      }
+
+      video {
+         width: 100%;
+      }
+
+      .courses__block-btn {
+         position: absolute;
+         top: 30%;
+         left: 50%;
+         transform: translateX(-50%);
+
+         background: #85bf80;
+         border-radius: 50%;
+         padding: 1.7rem 2rem;
+      }
+
+      .courses__block-promo {
+         position: absolute;
+         top: 70%;
+         left: 50%;
+         transform: translateX(-50%);
+
+         font-size: 1.8rem;
+         line-height: 2.6rem;
+         color: $color2;
+         opacity: 0.8;
+         text-align: center;
+
+         @media screen and (max-width: $md) {
+            font-size: 1.3rem;
+            line-height: 2rem;
+         }
+      }
+   }
+
+   .courses__item-b-video {
+      margin-top: 3.6rem;
+      margin-left: 2rem;
+
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+
+      span {
+         font-weight: 600;
+      }
+
+      @media screen and (max-width: $md) {
+         font-size: 1.3rem;
+         line-height: 2rem;
+      }
+
+      &-w {
+         margin-bottom: 10rem;
+
+         @media screen and (max-width: $md) {
+            margin-bottom: 5rem;
+         }
+      }
+
+      &-w2 {
+         margin-bottom: 3rem;
+      }
+   }
+
+   .courses__item-b-spikers {
+      margin-left: 2rem;
+
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+      font-weight: 600;
+
+      @media screen and (max-width: $md) {
+         font-size: 1.3rem;
+         line-height: 2rem;
+      }
+   }
+}
