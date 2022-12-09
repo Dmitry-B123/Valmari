@@ -15,3 +15,48 @@ titleListSelect.forEach(el => {
       el.classList.toggle('courses-menu__list-select-active');
    });
 });
+
+// сортировка данных
+// window.onload = function () позволяет избежать конфликта с jquery
+window.onload = function () {
+   let coursesMenu = document.querySelector('.courses-menu__inner');
+   let itemMenu = document.querySelectorAll('.courses-menu__item');
+   let coursesItems = document.querySelectorAll('.courses-list__inner .courses__item');
+
+   function startCourses() {
+      itemMenu.forEach(el => {
+         if (el.classList.contains('courses-menu__item-active')) {
+            coursesItems.forEach(item => {
+               item.classList.add('courses__item-active');
+            })
+         }
+      })
+   }
+   startCourses()
+
+   function sortCourses(menu) {
+      menu.addEventListener('click', function (e) {
+         let coursesItems = document.querySelectorAll('.courses-list__inner .courses__item');
+         let target = e.target.closest('.courses-menu-btn');
+         if (!target) return
+
+         // фон кнопок
+         let itemMenu = document.querySelectorAll('.courses-menu__item');
+         itemMenu.forEach(el => {
+            el.classList.remove('courses-menu__item-active');
+         })
+         target.classList.add('courses-menu__item-active');
+
+         // перебор items
+         coursesItems.forEach(item => {
+            if ((item.dataset.cours == target.dataset.courses ||
+               item.dataset.coursesAll == target.dataset.courses)) {
+               item.classList.add('courses__item-active');
+            } else {
+               item.classList.remove('courses__item-active');
+            }
+         })
+      })
+   }
+   sortCourses(coursesMenu)
+}

@@ -1,0 +1,188 @@
+.course-program {
+   position: relative;
+
+   max-width: 1920px;
+   width: 100%;
+   margin: 0 auto;
+
+   &::after {
+      position: absolute;
+      top: -40%;
+      left: 0;
+
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+
+      background: url(../images/cours/decor.svg) no-repeat;
+   }
+}
+
+.course-program__inner {
+   position: relative;
+   z-index: 3;
+}
+
+.course-program__title {
+   margin-bottom: 7.5rem;
+
+   @media screen and (max-width: $lg) {
+      margin-bottom: 5rem;
+   }
+
+   @media screen and (max-width: $sm) {
+      margin-bottom: 4rem;
+   }
+}
+
+.course-program__table {
+   max-width: 99.6rem;
+   width: 100%;
+   margin: 0 auto;
+
+   background-color: $decor5;
+   box-shadow: 0px 4px 10px rgba(198, 198, 198, 0.3);
+}
+
+.course-program__block {
+   display: grid;
+   grid-template-columns: repeat(13, 1fr);
+   gap: 3.5rem;
+   padding: 2.6rem 4rem 4rem;
+
+   &:first-child {
+      margin-bottom: 3.2rem;
+
+      border-bottom: 1px solid #b5b5b5;
+   }
+
+   @media screen and (max-width: $md) {
+      justify-items: center;
+      gap: 1.8rem;
+   }
+
+   @media screen and (max-width: 440px) {
+      padding: 2.6rem;
+   }
+
+   @media screen and (max-width: 290px) {
+      padding: 1rem;
+   }
+}
+
+.course-program__block-day {
+   grid-column: 1/3;
+
+   font-size: 2.4rem;
+   line-height: 3.8rem;
+   text-transform: uppercase;
+
+   @media screen and (max-width: $lg) {
+      font-size: 2rem;
+   }
+
+   @media screen and (max-width: 850px) {
+      font-size: 1.7rem;
+   }
+
+   @media screen and (max-width: $md) {
+      grid-column: 1/14;
+
+      font-size: 2rem;
+   }
+
+   @media screen and (max-width: 560px) {
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+   }
+}
+
+.course-program__block-info {
+   grid-column: 3/13;
+
+   font-size: 1.8rem;
+   line-height: 2.6rem;
+   opacity: 0.8;
+   font-weight: 500;
+
+   @media screen and (max-width: $md) {
+      grid-column: 1/13;
+   }
+
+   .course-program__block-title {
+      margin-bottom: 3.5rem;
+
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+      opacity: 0.8;
+      font-weight: 500;
+
+      @media screen and (max-width: $lg) {
+         font-size: 1.6rem;
+         line-height: 2.2rem;
+      }
+
+      @media screen and (max-width: 440px) {
+         font-size: 1.5rem;
+         line-height: 2.1rem;
+      }
+   }
+
+   .course-program__description {
+      height: 0;
+      overflow: hidden;
+
+      transition: 0.5s;
+
+      background-color: rgba(#b5b5b5, 0.3);
+
+      &-title {
+         font-size: 1.6rem;
+         line-height: 2.4rem;
+         text-transform: uppercase;
+         color: $color3;
+      }
+
+      &-item {
+         display: flex;
+         align-items: center;
+         gap: 2rem;
+         margin: 2.5rem 0;
+
+         span {
+            font-weight: 700;
+            font-size: 2.2rem;
+            line-height: 3.2rem;
+            color: #d4d8db;
+         }
+
+         p {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+
+            @media screen and (max-width: 560px) {
+               font-size: 1.5rem;
+               line-height: 1.8rem;
+            }
+
+            @media screen and (max-width: 440px) {
+               font-size: 1.3rem;
+            }
+         }
+      }
+   }
+}
+
+.accordion__block-active .course-program__description {
+   height: 100%;
+
+   transition: 0.5s;
+
+   background: inherit;
+}
+
+.course-program__block-btn {
+   grid-column: 13/14;
+}

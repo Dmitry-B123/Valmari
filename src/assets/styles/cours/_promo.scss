@@ -1,4 +1,7 @@
 .cours-promo__inner {
+   position: relative;
+   z-index: 3;
+
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 2rem;
@@ -73,6 +76,9 @@
 }
 
 .cours-promo__info {
+   position: relative;
+   z-index: 3;
+
    padding: 7rem 5rem 7rem 7rem;
    margin-top: 4.5rem;
 

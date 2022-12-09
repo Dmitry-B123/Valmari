@@ -16,11 +16,15 @@
 
    .courses__item {
       max-height: 63rem;
-      display: grid;
+      display: none;
       align-items: stretch;
 
       position: relative;
       z-index: 0;
+
+      &-active {
+         display: grid;
+      }
    }
 
    .courses__item-video {

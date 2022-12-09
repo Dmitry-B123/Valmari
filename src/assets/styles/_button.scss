@@ -210,3 +210,37 @@
       background: lighten($decor2, 5%);
    }
 }
+
+// btn accordion
+.accordion-btn {
+   width: 52px;
+   height: 52px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+
+   background: #f4f4f4;
+
+   color: #b5b5b5;
+   font-size: 5.8rem;
+   font-weight: 100;
+
+   &-active {
+      transform: rotate(45deg);
+   }
+
+   @media screen and (max-width: 480px) {
+      width: 46px;
+      height: 46px;
+
+      font-size: 4.8rem;
+   }
+
+   @media screen and (max-width: 340px) {
+      width: 26px;
+      height: 26px;
+
+      font-size: 3.8rem;
+   }
+}

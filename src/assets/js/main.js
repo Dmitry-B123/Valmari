@@ -21,6 +21,7 @@ btnLangs.forEach((el) => {
 });
 
 // slider courses
+
 $(function () {
    $('.courses__slider').slick({
       slidesToShow: 3,
