@@ -1,0 +1,71 @@
+.aboutcourse__list {
+   margin-top: 7.5rem;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 5rem;
+
+   @media screen and (max-width: $md) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2.6rem;
+   }
+}
+
+.aboutcourse__item {
+   padding: 4rem 2.6rem 5rem 4rem;
+   min-height: 25rem;
+
+   background: #d7ffd3;
+
+   @media screen and (max-width: $md) {
+      min-height: 18rem;
+   }
+
+   @media screen and (max-width: $sm) {
+      padding-left: 2rem;
+   }
+
+   .aboutcourse__item-title {
+      margin-bottom: 2.7rem;
+      max-width: 40rem;
+
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 2.6rem;
+
+      @media screen and (max-width: $lg) {
+         font-size: 2rem;
+         line-height: 2.6rem;
+      }
+
+      @media screen and (max-width: $md) {
+         font-size: 1.8rem;
+         line-height: 2.6rem;
+      }
+
+      @media screen and (max-width: $sm) {
+         font-size: 1.6rem;
+         line-height: 2rem;
+      }
+   }
+
+   .aboutcourse__item-description {
+      font-weight: 400;
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+
+      @media screen and (max-width: $lg) {
+         font-size: 1.8rem;
+         line-height: 2.6rem;
+      }
+
+      @media screen and (max-width: $md) {
+         font-size: 1.5rem;
+         line-height: 2rem;
+      }
+
+      @media screen and (max-width: $sm) {
+         font-size: 1.3rem;
+         line-height: 2rem;
+      }
+   }
+}

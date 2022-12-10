@@ -75,10 +75,7 @@
 
    @media screen and (max-width: 1260px) {
       max-width: 30rem;
-   }
-
-   @media screen and (max-width: 400px) {
-      width: 30rem;
+      width: 100%;
    }
 
    .courses__item-block {

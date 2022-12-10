@@ -1,9 +1,17 @@
-// menu ul courses-menu__sublist-select
+// menu ul courses-menu__sublist-select  and  hidden for click li
 let liSublistSelect = document.querySelectorAll('.courses-menu__select-item');
 
 liSublistSelect.forEach(el => {
    el.addEventListener('click', function () {
-      el.classList.toggle('courses-menu__select-item-active');
+      if (el.classList.contains('item-sublist')) {
+         el.classList.toggle('courses-menu__select-item-active');
+      } else {
+         let titleListSelect = document.querySelectorAll('.courses-menu__select-title');
+
+         titleListSelect.forEach(el => {
+            el.classList.remove('courses-menu__list-select-active');
+         });
+      }
    });
 });
 
