@@ -23,3 +23,22 @@ function accordion(blockParent) {
 }
 
 accordion(blockAccordionCours)
+
+// slider lastTime
+$(function () {
+   $('.lasttime__slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      responsive: [
+         {
+            breakpoint: 768,
+            settings: {
+               slidesToShow: 2,
+               slidesToScroll: 1
+            }
+         },
+      ]
+   });
+});

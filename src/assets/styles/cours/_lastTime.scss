@@ -1,0 +1,30 @@
+.lasttime {
+   max-width: 192rem;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.lasttime__title {
+   margin-bottom: 7.5rem;
+}
+
+.lasttime__slider {
+   .slick-track {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 6rem;
+
+      @media screen and (max-width: $md) {
+         gap: 2rem;
+      }
+
+      @media screen and (max-width: 400px) {
+         gap: 0.5rem;
+      }
+
+      @media screen and (max-width: $mob) {
+         gap: 0rem;
+      }
+   }
+}

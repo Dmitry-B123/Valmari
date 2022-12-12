@@ -1,0 +1,144 @@
+.earlyreg {
+   margin-top: 18rem;
+
+   background: $decor1;
+
+   @media screen and (max-width: $lg) {
+      margin-top: 10rem;
+   }
+
+   @media screen and (max-width: $mob) {
+      margin-top: 7rem;
+   }
+}
+
+.earlyreg__inner {
+   position: relative;
+
+   max-width: 100%;
+   padding: 11rem 0 12rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   text-align: center;
+
+   @media screen and (max-width: $md) {
+      padding: 6.5rem 0;
+   }
+
+   &::after {
+      position: absolute;
+      z-index: 0;
+      top: 14%;
+      left: 40%;
+
+      content: "";
+      display: block;
+      width: 53.8rem;
+      height: 36.4rem;
+
+      background: url(../images/cours/earlyRegistration/bird.svg) center no-repeat;
+
+      @media screen and (max-width: 920px) {
+         left: 25%;
+      }
+
+      @media screen and (max-width: $md) {
+         top: 12%;
+         left: 40%;
+
+         width: 38.6rem;
+         height: 26.1rem;
+
+         background: url(../images/cours/earlyRegistration/bird-768.svg) center no-repeat;
+      }
+
+      @media screen and (max-width: 650px) {
+         left: 25%;
+      }
+
+      @media screen and (max-width: 530px) {
+         left: 16%;
+      }
+
+      @media screen and (max-width: $sm) {
+         top: 5%;
+         left: 12%;
+
+         width: 23.7rem;
+         height: 16rem;
+
+         background: url(../images/cours/earlyRegistration/bird-480.svg) center no-repeat;
+      }
+
+      @media screen and (max-width: $mob) {
+         left: 3%;
+      }
+   }
+
+   .earlyreg__title {
+      position: relative;
+      z-index: 1;
+
+      margin-bottom: 3rem;
+
+      font-weight: 500;
+      font-size: 4.2rem;
+      line-height: 5.2rem;
+      text-transform: uppercase;
+
+      @media screen and (max-width: $md) {
+         font-size: 3.8rem;
+         line-height: 5.2rem;
+      }
+
+      @media screen and (max-width: $sm) {
+         font-size: 3rem;
+         line-height: 5.2rem;
+      }
+
+      @media screen and (max-width: 400px) {
+         font-size: 2rem;
+         line-height: 2.9rem;
+      }
+   }
+
+   .earlyreg__text {
+      position: relative;
+      z-index: 1;
+
+      margin-bottom: 6rem;
+      display: block;
+
+      font-weight: 600;
+      font-size: 2.7rem;
+      line-height: 3.7rem;
+      opacity: 0.8;
+
+      @media screen and (max-width: $md) {
+         font-size: 2.5rem;
+         line-height: 3.7rem;
+      }
+
+      @media screen and (max-width: $sm) {
+         margin-bottom: 4.5rem;
+
+         font-size: 2rem;
+         line-height: 3rem;
+      }
+
+      @media screen and (max-width: 400px) {
+         font-size: 1.5rem;
+         line-height: 2.3rem;
+      }
+   }
+}
+
+.earlyreg__btn {
+   position: relative;
+   z-index: 1;
+
+   width: 100%;
+   max-width: 32rem;
+}

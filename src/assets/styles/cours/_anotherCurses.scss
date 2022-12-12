@@ -1,0 +1,41 @@
+.anothercurses__inner {
+   margin-top: 25rem;
+}
+
+.anothercurses__title {
+   margin-bottom: 7rem;
+
+   @media screen and (max-width: $lg) {
+      margin-bottom: 5rem;
+   }
+
+   @media screen and (max-width: $md) {
+      margin-bottom: 4rem;
+   }
+}
+
+.anothercurses__blocks {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 6.6rem;
+}
+
+.anothercurses__link {
+   margin-top: 4rem;
+   display: block;
+
+   text-align: right;
+   font-weight: 600;
+   font-size: 2rem;
+   line-height: 2rem;
+   opacity: 0.8;
+
+   &:hover {
+      color: $color3;
+   }
+
+   @media screen and (max-width: $mob) {
+      text-align: center;
+   }
+}
