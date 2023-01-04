@@ -53,6 +53,10 @@
          gap: 2rem;
       }
 
+      // @media screen and (max-width: 500px) {
+      //    justify-content: space-around;
+      // }
+
       @media screen and (max-width: 400px) {
          gap: 0.5rem;
       }
@@ -217,7 +221,7 @@
 .slider-masterclasses-btn-left,
 .slider-offer-btn-left {
    position: absolute;
-   top: 50%;
+   top: 60%;
    left: 0;
    transform: translate(-200%, -50%);
 

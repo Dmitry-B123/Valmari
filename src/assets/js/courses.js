@@ -15,6 +15,7 @@ liSublistSelect.forEach(el => {
    });
 });
 
+
 // menu ul courses-menu__list-select
 let titleListSelect = document.querySelectorAll('.courses-menu__select-title');
 
@@ -23,6 +24,7 @@ titleListSelect.forEach(el => {
       el.classList.toggle('courses-menu__list-select-active');
    });
 });
+
 
 // сортировка данных
 // window.onload = function () позволяет избежать конфликта с jquery
@@ -68,3 +70,25 @@ window.onload = function () {
    }
    sortCourses(coursesMenu)
 }
+
+
+// пагинация simplePagination.js + jQuery
+$(function () {
+   let items = $('.courses-list__inner .courses__item');
+   let numItems = items.length;
+   let perPage = 6;
+
+   items.slice(perPage).hide();
+
+   $('#pagin').pagination({
+      items: numItems,
+      itemsOnPage: perPage,
+      prevText: "<",
+      nextText: ">",
+      onPageClick: function (pageNumber) {
+         let showFrom = perPage * (pageNumber - 1);
+         let showTo = showFrom + perPage;
+         items.hide().slice(showFrom, showTo).show();
+      }
+   });
+});

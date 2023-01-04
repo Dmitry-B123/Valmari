@@ -2,9 +2,13 @@
    display: flex;
    justify-content: center;
    margin-top: 7.5rem;
-   gap: 1.6rem;
 
-   button {
+   ul {
+      display: flex;
+      gap: 2rem;
+   }
+
+   li {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -17,7 +21,7 @@
       font-weight: 600;
    }
 
-   .courses-pagination-active {
+   li.active {
       color: $color3;
    }
 }
