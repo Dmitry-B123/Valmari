@@ -1,0 +1,82 @@
+.educational-center {
+   .container {
+      @media screen and (max-width: $sm) {
+         padding: 0;
+      }
+   }
+}
+
+.educational-center__grid {
+   display: flex;
+   gap: 5rem;
+   align-items: center;
+   margin-top: 5rem;
+
+   @media screen and (max-width: $lg) {
+      gap: 2rem;
+   }
+
+   @media screen and (max-width: $sm) {
+      flex-wrap: wrap;
+   }
+}
+
+.educational-center__title {
+   max-width: 56rem;
+
+   font-weight: 600;
+   font-size: 3.9rem;
+   line-height: 5.7rem;
+   text-transform: uppercase;
+   color: $color3;
+
+   @media screen and (max-width: $lg) {
+      font-size: 3.2rem;
+      line-height: 4.6rem;
+   }
+
+   @media screen and (max-width: $md) {
+      font-size: 2.1rem;
+      line-height: 3.1rem;
+   }
+
+   @media screen and (max-width: $sm) {
+      font-size: 2rem;
+      line-height: 2.8rem;
+      text-align: center;
+   }
+}
+
+.educational-center__img {
+   img {
+      width: 100%;
+   }
+}
+
+.educational-center__description {
+   margin: 5rem 5%;
+   padding: 3.7rem;
+
+   box-shadow: 12px 12px 10px rgba(207, 207, 207, 0.25);
+
+   font-size: 2rem;
+   line-height: 2.6rem;
+   opacity: 0.8;
+
+   @media screen and (max-width: $sm) {
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+   }
+
+   @media screen and (max-width: $mob) {
+      margin: 2%;
+   }
+
+   .educational-center__paragraf:first-child {
+      margin-bottom: 4rem;
+
+      @media screen and (max-width: $sm) {
+         margin-bottom: 2rem;
+      }
+   }
+}

@@ -8,6 +8,7 @@
 @import "button";
 
 //blocks
+//header
 @import "header/header";
 
 //blocks main
@@ -21,6 +22,7 @@
 @import "main/offer";
 @import "main/main-form";
 
+//footer
 @import "footer/footer";
 
 //blocks courses
@@ -40,3 +42,10 @@
 //blocks videos
 @import "videos/video-main";
 @import "videos/videos-anouther";
+
+//blocks about-us
+@import "about-us/educational-center";
+@import "about-us/about-info";
+@import "about-us/progress";
+@import "about-us/our-trainers";
+@import "about-us/reviews";
